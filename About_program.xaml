@@ -1,0 +1,13 @@
+﻿<Window x:Class="BergsonMatchesUpgraded.AboutProgram"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About program" Height="265" Width="365" Icon="/BergsonMatchesUpgraded;component/Application.ico" Name="AboutWindow" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="SingleBorderWindow" KeyDown="AboutWindow_KeyDown">
+    <Grid>
+        <Label Content="Bergson Matches (Upgraded version)" Height="28" HorizontalAlignment="Left" Margin="100,10,0,0" Name="label1" VerticalAlignment="Top" Width="220" FontFamily="Microsoft Sans Serif" FontWeight="Bold" />
+        <TextBlock Height="55" HorizontalAlignment="Left" Margin="102,52,0,0" Name="textBlock1" Text="This game was created on the basis of the previous version of the game, which was written using the library MFC." VerticalAlignment="Top" Width="225" TextWrapping="Wrap" />
+        <TextBlock Height="35" HorizontalAlignment="Left" Margin="100,125,0,0" Name="textBlock2" Text="Leonid Ivanovsky, student, YarSU, IVT-41-SO, Russia, 2013" VerticalAlignment="Top" TextWrapping="Wrap" Width="225" FontStyle="Italic" />
+        <Image Height="64" HorizontalAlignment="Left" Margin="17,20,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="64" Source="/BergsonMatchesUpgraded;component/CSharpBall.ico" />
+        <Button Content="OK" Height="25" HorizontalAlignment="Left" Margin="150,190,0,0" Name="ButtonAboutOk" VerticalAlignment="Top" Width="60" Click="ButtonAboutOk_Click" Cursor="Hand" />
+        <Image Height="64" HorizontalAlignment="Left" Margin="17,105,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="64" Source="/BergsonMatchesUpgraded;component/Gamepad.ico" />
+    </Grid>
+</Window>

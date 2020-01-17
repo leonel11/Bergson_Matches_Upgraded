@@ -1,0 +1,24 @@
+﻿<Window x:Class="BergsonMatchesUpgraded.Settings"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings of the game" Height="355" Width="285" Icon="/BergsonMatchesUpgraded;component/Settings2.ico" Background="Honeydew" Name="SettingsWindow" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Cursor="Hand" WindowStyle="SingleBorderWindow" KeyDown="SettingsWindow_KeyDown">
+    <Grid>
+        <xctk:IntegerUpDown Value="1" Name="IntegerUpDownInit" Height="30" Margin="205,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" HorizontalContentAlignment="Center" Text="1" TextAlignment="Center" Maximum="60" Minimum="1" ClipValueToMinMax="True" Width="40" OpacityMask="{x:Null}" FontSize="14" FontStyle="Normal" ClipToBounds="True" AllowDrop="False" ParsingNumberStyle="Integer" ToolTip="Initial number of matches"></xctk:IntegerUpDown>
+        <xctk:IntegerUpDown Value="1" Name="IntegerUpDownMax" Height="30" Margin="205,70,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" HorizontalContentAlignment="Center" Text="1" TextAlignment="Center" Maximum="9" Minimum="1" ClipValueToMinMax="True" Width="40" OpacityMask="{x:Null}" FontSize="14" FontStyle="Normal" ClipToBounds="True" AllowDrop="False" ParsingNumberStyle="Integer" ToolTip="Maximum number of matches, which can be picked up for the course"></xctk:IntegerUpDown>
+        <Label Content="Initially matches:" Height="28" HorizontalAlignment="Left" Margin="50,20,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Maximum at a time can be taken:" Height="28" HorizontalAlignment="Left" Margin="5,70,0,0" Name="label2" VerticalAlignment="Top" />
+        <GroupBox Header="Difficulty of the game" Height="120" HorizontalAlignment="Left" Margin="65,125,0,0" Name="GroupBoxDifficulty" VerticalAlignment="Top" Width="135">
+            <Grid HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="64*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <RadioButton Content="Easy" Height="15" HorizontalAlignment="Left" Margin="40,21,0,0" Name="RadioButtonEasy" VerticalAlignment="Top" GroupName="DifficultyGroup" IsChecked="True" Grid.ColumnSpan="2" ToolTip="Easy mode" IsEnabled="True" IsThreeState="False" Checked="RadioButtonEasy_Checked" />
+                <RadioButton Content="Hard" Height="15" HorizontalAlignment="Left" Margin="40,56,0,0" Name="RadioButtonHard" VerticalAlignment="Top" GroupName="DifficultyGroup" IsChecked="False" Grid.ColumnSpan="2" ToolTip="Hard mode" Checked="RadioButtonHard_Checked" />
+            </Grid>
+        </GroupBox>
+        <Button Content="OK" Height="25" HorizontalAlignment="Left" Margin="45,280,0,0" Name="ButtonOK" VerticalAlignment="Top" Width="75" ToolTip="OK" Click="ButtonOK_Click" />
+        <Button Content="Cancel" Height="25" HorizontalAlignment="Left" Margin="150,280,0,0" Name="ButtonCancel" VerticalAlignment="Top" Width="75" ToolTip="Cancel" Click="ButtonCancel_Click" />
+    </Grid>
+</Window>
